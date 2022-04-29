@@ -19,7 +19,7 @@ public class RegisterAndLoginStepDef {
     @When("the user enters a username, password, security question, and answer")
     public void theUserEntersAUsernamePasswordSecurityQuestionAndAnswer() {
         registerAndLoginPage=new RegisterAndLoginPage();
-        registerAndLoginPage.setUpAccount("testaccount1@test.com","123123","123123","Your favorite book?","Book");
+        registerAndLoginPage.setUpAccount("testaccount99@test.com","123123","123123","Your favorite book?","Book");
     }
 
     //after sending the information user clicks the register button to register
@@ -33,7 +33,7 @@ public class RegisterAndLoginStepDef {
     public void theUserCanLogInWithTheProvidedUsernameAndPassword() {
         loginPage=new LoginPage();
         //login with the credentials
-        loginPage.login("testaccount1@test.com","123123");
+        loginPage.login("testaccount99@test.com","123123");
         //validate if we're able to log in
         Assert.assertEquals("Your Basket",loginPage.getYourBasketText());
         //close window

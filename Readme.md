@@ -26,9 +26,11 @@ WebDriverManager
   - Utils class includes driver implementation.
 
  ##**How To Run Tests**
+ 
 -First run the OWASP Juice Shop on your local 
 
- How to run docket: -docker run --publish 3000:3000 bkimminich/juice-shop
+ How to run docker: -docker run --publish 3000:3000 bkimminich/juice-shop
+
 
 -Clone repository
 
